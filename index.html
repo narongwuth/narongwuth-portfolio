@@ -5,174 +5,255 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Narongwuth Wudhikanakorn | IT Executive & Digital Transformation Leader</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="bg-orb bg-orb-1"></div>
+        <div class="bg-orb bg-orb-2"></div>
+        <div class="bg-orb bg-orb-3"></div>
+    </div>
+
+    <nav class="navbar">
         <div class="container nav-content">
-            <a href="#" class="logo">NW</a>
+            <a href="#" class="logo">
+                <span class="logo-text">NW</span>
+            </a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#certificates">Certificates</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#contact" class="nav-cta">Let's Talk</a></li>
             </ul>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
         </div>
     </nav>
 
     <header class="hero">
         <div class="container">
-            <img src="assets/profile.jpg" alt="Narongwuth Wudhikanakorn" class="profile-photo">
-            <h1 class="hero-title">Narongwuth Wudhikanakorn</h1>
-            <p class="hero-subtitle">IT Executive & Digital Transformation Leader</p>
-            <p class="hero-tagline">Driving Business Value Through Strategic Technology</p>
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Available for Opportunities
+            </div>
+            <div class="hero-photo-wrapper">
+                <img src="assets/profile.jpg" alt="Narongwuth Wudhikanakorn" class="hero-photo">
+                <div class="hero-photo-ring"></div>
+            </div>
+            <h1 class="hero-title">
+                <span class="hero-title-line">Narongwuth</span>
+                <span class="hero-title-line accent">Wudhikanakorn</span>
+            </h1>
+            <p class="hero-subtitle">
+                <span class="typewriter">IT Executive & Digital Transformation Leader</span>
+            </p>
+            <p class="hero-tagline">
+                28+ Years Transforming Businesses Through Strategic Technology
+            </p>
             <div class="hero-cta">
-                <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                <a href="#about" class="btn btn-secondary">Learn More</a>
+                <a href="#contact" class="btn btn-primary">
+                    <span>Let's Talk</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#experience" class="btn btn-secondary">
+                    <span>View Experience</span>
+                </a>
+            </div>
+            <div class="hero-scroll">
+                <span>Scroll to explore</span>
+                <div class="scroll-indicator"></div>
             </div>
         </div>
     </header>
 
     <section id="about" class="section">
         <div class="container">
-            <h2 class="section-title">Executive Summary</h2>
-            <div class="summary-content">
-                <p>Senior IT Executive with 28+ years of experience driving digital transformation and managing enterprise technology operations across Manufacturing, Oil & Gas, and Consumer Goods industries.</p>
-                <p>Proven track record in SAP implementations, IT infrastructure modernization, cybersecurity, and leading high-performance teams. Recognized for delivering significant cost savings and operational efficiencies through strategic technology initiatives.</p>
-                <div class="key-achievements">
-                    <div class="achievement">
-                        <span class="achievement-number">$50M+</span>
-                        <span class="achievement-label">IT Transformation Programs Led</span>
+            <div class="section-header">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">The Executive Summary</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead">
+                        Senior IT Executive with <strong>28+ years</strong> of experience driving digital transformation and managing enterprise technology operations across Manufacturing, Oil & Gas, and Consumer Goods industries.
+                    </p>
+                    <p>
+                        From leading SAP implementations for Fortune 500 companies to steering MSSP operations and managing IT teams across 4 countries, I've consistently delivered measurable business value through strategic technology initiatives.
+                    </p>
+                </div>
+                <div class="key-metrics">
+                    <div class="metric">
+                        <span class="metric-number" data-target="28">0</span>
+                        <span class="metric-plus">+</span>
+                        <span class="metric-label">Years Experience</span>
                     </div>
-                    <div class="achievement">
-                        <span class="achievement-number">30%</span>
-                        <span class="achievement-label">Operational Efficiency Improvements</span>
+                    <div class="metric">
+                        <span class="metric-number" data-target="50">0</span>
+                        <span class="metric-plus">+</span>
+                        <span class="metric-label">Million $ Programs</span>
                     </div>
-                    <div class="achievement">
-                        <span class="achievement-number">50+</span>
-                        <span class="achievement-label">Team Members Managed</span>
+                    <div class="metric">
+                        <span class="metric-number" data-target="10">0</span>
+                        <span class="metric-plus">+</span>
+                        <span class="metric-label">Companies Served</span>
+                    </div>
+                    <div class="metric">
+                        <span class="metric-number" data-target="4">0</span>
+                        <span class="metric-plus"></span>
+                        <span class="metric-label">Countries Coverage</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="experience" class="section section-alt">
+    <section id="experience" class="section section-dark">
         <div class="container">
-            <h2 class="section-title">Professional Experience</h2>
+            <div class="section-header">
+                <span class="section-tag">Career Journey</span>
+                <h2 class="section-title">Professional Experience</h2>
+            </div>
             <div class="timeline">
-                <div class="timeline-item">
+                <div class="timeline-item" data-animate>
+                    <div class="timeline-marker"></div>
                     <div class="timeline-period">2022 - Present</div>
                     <div class="timeline-content">
-                        <h3>IT Manager</h3>
-                        <h4>Cobra International Co., Ltd.</h4>
-                        <p class="location">Chonburi, Thailand</p>
-                        <ul>
-                            <li>Lead CBI Group toward Digital Transformation and AI Transformation journey</li>
-                            <li>Manage IT operations and projects for CBI Group</li>
-                            <li>Ensure cybersecurity postures and resilience</li>
+                        <div class="timeline-header">
+                            <h3>IT Manager</h3>
+                            <span class="timeline-company">Cobra International Co., Ltd.</span>
+                        </div>
+                        <p class="timeline-location">Chonburi, Thailand</p>
+                        <ul class="timeline-highlights">
+                            <li>Lead CBI Group toward Digital Transformation and AI Transformation</li>
+                            <li>Manage IT operations serving composite manufacturing leader</li>
+                            <li>Drive cybersecurity postures and business resilience</li>
                         </ul>
                     </div>
                 </div>
-                <div class="timeline-item">
+                <div class="timeline-item" data-animate>
+                    <div class="timeline-marker"></div>
                     <div class="timeline-period">2020 - 2022</div>
                     <div class="timeline-content">
-                        <h3>Chief Technology Officer</h3>
-                        <h4>Cybertron Co., Ltd.</h4>
-                        <p class="location">Bangkok, Thailand</p>
-                        <ul>
-                            <li>Leading MSSP (Managed Security Service Provider)</li>
-                            <li>24×7 SOC Outsourcing and Cyber Range services</li>
+                        <div class="timeline-header">
+                            <h3>Chief Technology Officer</h3>
+                            <span class="timeline-company">Cybertron Co., Ltd.</span>
+                        </div>
+                        <p class="timeline-location">Bangkok, Thailand</p>
+                        <ul class="timeline-highlights">
+                            <li>Leading MSSP with 24×7 SOC Outsourcing services</li>
+                            <li>Cyber Range - Rapid Cybersecurity Competency Development</li>
                             <li>Strategy, project management, and technical consulting</li>
                         </ul>
                     </div>
                 </div>
-                <div class="timeline-item">
+                <div class="timeline-item" data-animate>
+                    <div class="timeline-marker"></div>
                     <div class="timeline-period">2019 - 2020</div>
                     <div class="timeline-content">
-                        <h3>Chief Information Officer</h3>
-                        <h4>Saijai Group Co., Ltd.</h4>
-                        <p class="location">Samutprakarn, Thailand</p>
-                        <ul>
-                            <li>Led Digital Transformation: ERP Selection & Implementation</li>
-                            <li>Native Mobile App Development, Website Renovation</li>
-                            <li>Part of Top Management Team in Marketing Strategy</li>
+                        <div class="timeline-header">
+                            <h3>Chief Information Officer</h3>
+                            <span class="timeline-company">Saijai Group Co., Ltd.</span>
+                        </div>
+                        <p class="timeline-location">Samutprakarn, Thailand</p>
+                        <ul class="timeline-highlights">
+                            <li>Led GMP-certified cosmetic manufacturer's Digital Transformation</li>
+                            <li>ERP Selection & Implementation, Mobile App Development</li>
+                            <li>Part of Top Management in Marketing Strategy Planning</li>
                         </ul>
                     </div>
                 </div>
-                <div class="timeline-item">
+                <div class="timeline-item" data-animate>
+                    <div class="timeline-marker"></div>
                     <div class="timeline-period">2017 - 2019</div>
                     <div class="timeline-content">
-                        <h3>Group IT Manager</h3>
-                        <h4>CR Asia Group</h4>
-                        <p class="location">Bangkok, Thailand</p>
-                        <ul>
-                            <li>Managed IT services for Thailand, India, Singapore, Malaysia</li>
-                            <li>ERP Selection and Implementation Projects</li>
+                        <div class="timeline-header">
+                            <h3>Group IT Manager</h3>
+                            <span class="timeline-company">CR Asia Group</span>
+                        </div>
+                        <p class="timeline-location">Bangkok, Thailand</p>
+                        <ul class="timeline-highlights">
+                            <li>Managed IT services across Thailand, India, Singapore, Malaysia</li>
+                            <li>ERP Selection and Implementation for Oil & Gas industry</li>
                             <li>IT Policy and Organization Changes</li>
                         </ul>
                     </div>
                 </div>
-                <div class="timeline-item">
+                <div class="timeline-item" data-animate>
+                    <div class="timeline-marker"></div>
                     <div class="timeline-period">2013 - 2015</div>
                     <div class="timeline-content">
-                        <h3>Group IT Director</h3>
-                        <h4>Thai City Electric Group (SHARP)</h4>
-                        <p class="location">Bangkok, Thailand</p>
-                        <ul>
+                        <div class="timeline-header">
+                            <h3>Group IT Director</h3>
+                            <span class="timeline-company">Thai City Electric Group (SHARP)</span>
+                        </div>
+                        <p class="timeline-location">Bangkok, Thailand</p>
+                        <ul class="timeline-highlights">
                             <li>Led integration of 2 IT teams from different companies</li>
                             <li>IT Strategic Directions 2013-2016</li>
                             <li>Managed team of 25 people across 2 sites</li>
                         </ul>
                     </div>
                 </div>
-                <div class="timeline-item">
+                <div class="timeline-item" data-animate>
+                    <div class="timeline-marker"></div>
                     <div class="timeline-period">2012 - 2013</div>
                     <div class="timeline-content">
-                        <h3>System Operations Group Leader</h3>
-                        <h4>Holcim Services (Asia) Ltd.</h4>
-                        <p class="location">Bangkok / Saraburi, Thailand</p>
-                        <ul>
-                            <li>Managed all IT infrastructure for Group SCCC (2,000 users, 70 sites)</li>
-                            <li>IT Infrastructure Projects</li>
-                            <li>IT Security and Compliance</li>
+                        <div class="timeline-header">
+                            <h3>System Operations Group Leader</h3>
+                            <span class="timeline-company">Holcim Services (Asia) Ltd.</span>
+                        </div>
+                        <p class="timeline-location">Bangkok / Saraburi, Thailand</p>
+                        <ul class="timeline-highlights">
+                            <li>Managed IT infrastructure for 2,000 users, 70 sites nationwide</li>
+                            <li>IT Infrastructure Projects and Security Compliance</li>
                         </ul>
                     </div>
                 </div>
-                <div class="timeline-item">
+                <div class="timeline-item" data-animate>
+                    <div class="timeline-marker"></div>
                     <div class="timeline-period">2011 - 2012</div>
                     <div class="timeline-content">
-                        <h3>Assistant to Managing Director</h3>
-                        <h4>EconTech Supply Co., Ltd.</h4>
-                        <p class="location">Samutprakarn, Thailand</p>
-                        <ul>
-                            <li>Developed new digital business in printing industry (CTP market)</li>
-                            <li>Developed new digital business in medical industry (PACS market)</li>
+                        <div class="timeline-header">
+                            <h3>Assistant to Managing Director</h3>
+                            <span class="timeline-company">EconTech Supply Co., Ltd.</span>
+                        </div>
+                        <p class="timeline-location">Samutprakarn, Thailand</p>
+                        <ul class="timeline-highlights">
+                            <li>Developed new digital business in printing (CTP) and medical (PACS) markets</li>
                             <li>Business trips to Germany, Korea, Malaysia</li>
                         </ul>
                     </div>
                 </div>
-                <div class="timeline-item">
+                <div class="timeline-item" data-animate>
+                    <div class="timeline-marker"></div>
                     <div class="timeline-period">2005 - 2011</div>
                     <div class="timeline-content">
-                        <h3>Senior Manager / Information Technology Division</h3>
-                        <h4>TPT Petrochemicals PCL / Indorama Group</h4>
-                        <p class="location">Bangkok / Rayong, Thailand</p>
-                        <ul>
-                            <li>Managed IT Division (10 staff) for Listed Company</li>
+                        <div class="timeline-header">
+                            <h3>Senior Manager / IT Division</h3>
+                            <span class="timeline-company">TPT Petrochemicals PCL / Indorama Group</span>
+                        </div>
+                        <p class="timeline-location">Bangkok / Rayong, Thailand</p>
+                        <ul class="timeline-highlights">
                             <li>Introduced ITIL to IT Division</li>
                             <li>24x7 IT Support for 2 Data Centers</li>
+                            <li>Part of successful business turnaround project</li>
                         </ul>
                     </div>
                 </div>
-                <div class="timeline-item">
+                <div class="timeline-item" data-animate>
+                    <div class="timeline-marker"></div>
                     <div class="timeline-period">1996 - 2005</div>
                     <div class="timeline-content">
-                        <h3>SAP Technical Consultant</h3>
-                        <h4>IBM BCS / PwC Consulting</h4>
-                        <p class="location">Bangkok, Thailand</p>
-                        <ul>
-                            <li>Successful SAP Implementations for major clients</li>
-                            <li>CP 7-11, Siam City Cement, TrueMove, and more</li>
+                        <div class="timeline-header">
+                            <h3>SAP Technical Consultant</h3>
+                            <span class="timeline-company">IBM BCS / PwC Consulting</span>
+                        </div>
+                        <p class="timeline-location">Bangkok, Thailand</p>
+                        <ul class="timeline-highlights">
+                            <li>Successful SAP Implementations for CP 7-11, Siam City Cement, TrueMove, and more</li>
                             <li>IT Infrastructure Management for PwC MCS</li>
                         </ul>
                     </div>
@@ -183,70 +264,85 @@
 
     <section id="certificates" class="section">
         <div class="container">
-            <h2 class="section-title">Certificates & Certifications</h2>
+            <div class="section-header">
+                <span class="section-tag">Credentials</span>
+                <h2 class="section-title">Certificates & Certifications</h2>
+            </div>
             <div class="cert-tabs">
                 <button class="tab-btn active" data-tab="exams">Exam Certifications</button>
                 <button class="tab-btn" data-tab="completion">Completion Certificates</button>
             </div>
             <div class="cert-grid" id="cert-exams">
-                <div class="cert-card">
+                <div class="cert-card" data-animate>
+                    <div class="cert-icon">🛡️</div>
                     <h4>CompTIA CySA+</h4>
                     <p>Cyber Security Analyst</p>
                     <span class="cert-year">2021</span>
                 </div>
-                <div class="cert-card">
+                <div class="cert-card" data-animate>
+                    <div class="cert-icon">🔒</div>
                     <h4>CompTIA Security+</h4>
                     <p>Security Fundamentals</p>
                     <span class="cert-year">2021</span>
                 </div>
-                <div class="cert-card">
+                <div class="cert-card" data-animate>
+                    <div class="cert-icon">🔐</div>
                     <h4>CDPSE</h4>
                     <p>Certified Data Privacy Solution Engineer</p>
                     <span class="cert-year">2021</span>
                 </div>
-                <div class="cert-card">
+                <div class="cert-card" data-animate>
+                    <div class="cert-icon">☁️</div>
                     <h4>AWS Cloud Practitioner</h4>
                     <p>Amazon Web Services</p>
                     <span class="cert-year">2020</span>
                 </div>
-                <div class="cert-card">
+                <div class="cert-card" data-animate>
+                    <div class="cert-icon">📱</div>
                     <h4>Microsoft Azure Fundamentals</h4>
                     <p>Microsoft</p>
                     <span class="cert-year">2020</span>
                 </div>
-                <div class="cert-card">
+                <div class="cert-card" data-animate>
+                    <div class="cert-icon">📊</div>
                     <h4>ITIL Foundation v3</h4>
                     <p>IT Service Management</p>
                     <span class="cert-year">2009</span>
                 </div>
-                <div class="cert-card">
+                <div class="cert-card" data-animate>
+                    <div class="cert-icon">📊</div>
                     <h4>ITIL Foundation v2</h4>
                     <p>IT Service Management</p>
                     <span class="cert-year">2006</span>
                 </div>
             </div>
             <div class="cert-grid hidden" id="cert-completion">
-                <div class="cert-card">
+                <div class="cert-card" data-animate>
+                    <div class="cert-icon">🎯</div>
                     <h4>Lean Six Sigma Green Belt</h4>
                     <p>BMGI</p>
                     <span class="cert-year">2009</span>
                 </div>
-                <div class="cert-card">
+                <div class="cert-card" data-animate>
+                    <div class="cert-icon">💻</div>
                     <h4>SAP Certified Technical Consultant</h4>
                     <p>SAP AG</p>
                     <span class="cert-year">2000</span>
                 </div>
-                <div class="cert-card">
+                <div class="cert-card" data-animate>
+                    <div class="cert-icon">🏆</div>
                     <h4>Microsoft Certified Professional</h4>
                     <p>Microsoft</p>
                     <span class="cert-year">1994</span>
                 </div>
-                <div class="cert-card">
+                <div class="cert-card" data-animate>
+                    <div class="cert-icon">🤖</div>
                     <h4>Make AI Foundation</h4>
                     <p>AI Fundamentals</p>
                     <span class="cert-year">2025</span>
                 </div>
-                <div class="cert-card">
+                <div class="cert-card" data-animate>
+                    <div class="cert-icon">🤖</div>
                     <h4>Make AI Basics</h4>
                     <p>AI Basics</p>
                     <span class="cert-year">2025</span>
@@ -255,32 +351,52 @@
         </div>
     </section>
 
-    <section id="contact" class="section section-alt">
+    <section id="contact" class="section section-gradient">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
+            <div class="section-header">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Let's Talk</h2>
+            </div>
             <div class="contact-content">
-                <p>Open to opportunities in IT Leadership, Digital Transformation, and Consulting engagements.</p>
-                <div class="contact-links">
-                    <a href="mailto:phom@hotmail.com" class="contact-item">
-                        <span class="contact-icon">📧</span>
-                        <span>phom@hotmail.com</span>
+                <p class="contact-intro">
+                    Ready to bring 28+ years of IT expertise to your organization? Let's discuss how I can help transform your technology landscape.
+                </p>
+                <div class="contact-cards">
+                    <a href="mailto:phom@hotmail.com" class="contact-card">
+                        <div class="contact-card-icon">📧</div>
+                        <div class="contact-card-content">
+                            <span class="contact-card-label">Email</span>
+                            <span class="contact-card-value">phom@hotmail.com</span>
+                        </div>
+                        <div class="contact-card-arrow">→</div>
                     </a>
-                    <a href="https://linkedin.com/in/narongwuth" target="_blank" class="contact-item">
-                        <span class="contact-icon">💼</span>
-                        <span>LinkedIn</span>
+                    <a href="https://linkedin.com/in/narongwuth" target="_blank" class="contact-card">
+                        <div class="contact-card-icon">💼</div>
+                        <div class="contact-card-content">
+                            <span class="contact-card-label">LinkedIn</span>
+                            <span class="contact-card-value">/in/narongwuth</span>
+                        </div>
+                        <div class="contact-card-arrow">→</div>
                     </a>
-                    <a href="tel:+66936515946" class="contact-item">
-                        <span class="contact-icon">📱</span>
-                        <span>+66 93 651-5946</span>
+                    <a href="tel:+66936515946" class="contact-card">
+                        <div class="contact-card-icon">📱</div>
+                        <div class="contact-card-content">
+                            <span class="contact-card-label">Phone</span>
+                            <span class="contact-card-value">+66 93 651-5946</span>
+                        </div>
+                        <div class="contact-card-arrow">→</div>
                     </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
+    <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Narongwuth Wudhikanakorn. All rights reserved.</p>
+            <div class="footer-content">
+                <span class="footer-logo">NW</span>
+                <span class="footer-text">© 2026 Narongwuth Wudhikanakorn. All rights reserved.</span>
+            </div>
         </div>
     </footer>
 
