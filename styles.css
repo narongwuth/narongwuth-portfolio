@@ -145,22 +145,18 @@ body {
     border-radius: 50%;
     animation: rotateOrbit 20s linear infinite;
 }
-.hero-photo-orbit::before {
-    content: '';
+.hero-photo-orbit span {
     position: absolute;
-    width: 8px;
-    height: 8px;
-    background: var(--accent);
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
-    box-shadow: 0 0 10px var(--accent);
-    top: 50%;
-    left: -4px;
-    transform: translateY(-50%);
+    box-shadow: 0 0 15px currentColor;
 }
-.orbit-dot-2 { top: 20% !important; left: 90% !important; background: var(--secondary) !important; box-shadow: 0 0 10px var(--secondary) !important; }
-.orbit-dot-3 { top: 80% !important; left: 10% !important; background: var(--primary) !important; box-shadow: 0 0 10px var(--primary) !important; }
-.orbit-dot-4 { top: 10% !important; left: 50% !important; background: var(--accent) !important; box-shadow: 0 0 10px var(--accent) !important; }
-.orbit-dot-5 { bottom: 10% !important; right: 15% !important; top: auto !important; left: auto !important; background: var(--secondary) !important; box-shadow: 0 0 10px var(--secondary) !important; }
+.orbit-dot-1 { top: 50%; left: -5px; transform: translateY(-50%); background: var(--accent); color: var(--accent); }
+.orbit-dot-2 { top: 15%; right: -5px; left: auto; transform: none; background: var(--secondary); color: var(--secondary); }
+.orbit-dot-3 { bottom: 15%; left: -5px; top: auto; transform: none; background: var(--primary); color: var(--primary); }
+.orbit-dot-4 { top: -5px; left: 50%; transform: translateX(-50%); background: var(--accent); color: var(--accent); }
+.orbit-dot-5 { bottom: -5px; left: 50%; top: auto; transform: translateX(-50%); background: var(--secondary); color: var(--secondary); }
 @keyframes rotate { to { transform: rotate(360deg); } }
 @keyframes rotateOrbit { to { transform: rotate(360deg); } }
 .hero-content {
