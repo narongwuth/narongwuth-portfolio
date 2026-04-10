@@ -397,7 +397,7 @@
                         </div>
                         <div class="contact-card-arrow">→</div>
                     </a>
-                    <a href="https://line.me/R/ti/p/@narongwuthatwork" target="_blank" class="contact-card">
+                    <button class="contact-card" id="line-qr-btn">
                         <div class="contact-card-icon">
                             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
                                 <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
@@ -411,7 +411,7 @@
                             <span class="contact-card-value">Add friend</span>
                         </div>
                         <div class="contact-card-arrow">→</div>
-                    </a>
+                    </button>
                 </div>
             </div>
         </div>
@@ -427,5 +427,16 @@
     </footer>
 
     <script src="script.js"></script>
+
+    <!-- LINE QR Modal -->
+    <div id="line-qr-modal" class="qr-modal">
+        <div class="qr-modal-content">
+            <button class="qr-modal-close" id="line-qr-close">×</button>
+            <h3>Add me on LINE</h3>
+            <p>Scan the QR code below</p>
+            <img src="assets/line-qr.jpg" alt="LINE QR Code" class="qr-image">
+            <p class="qr-hint">Open LINE app → Tap Add Friends → Tap QR code icon → Scan</p>
+        </div>
+    </div>
 </body>
 </html>
