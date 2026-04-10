@@ -88,3 +88,25 @@ if (typewriter) {
     };
     setTimeout(type, 1000);
 }
+
+// ===== LINE QR MODAL =====
+const lineQrBtn = document.getElementById('line-qr-btn');
+const lineQrModal = document.getElementById('line-qr-modal');
+const lineQrClose = document.getElementById('line-qr-close');
+
+if (lineQrBtn && lineQrModal) {
+    lineQrBtn.addEventListener('click', () => {
+        lineQrModal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    });
+    lineQrClose.addEventListener('click', () => {
+        lineQrModal.classList.remove('active');
+        document.body.style.overflow = '';
+    });
+    lineQrModal.addEventListener('click', (e) => {
+        if (e.target === lineQrModal) {
+            lineQrModal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
+}
