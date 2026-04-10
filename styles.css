@@ -130,22 +130,19 @@ body {
     position: absolute;
     inset: -15px;
     border-radius: 30px;
-    border: 2px solid transparent;
-    background: var(--gradient-1) border-box;
-    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-    mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-    animation: glowPulse 3s ease-in-out infinite;
+    border: 3px solid transparent;
+    background: linear-gradient(var(--dark), var(--dark)) padding-box,
+                var(--gradient-1) border-box;
+    animation: glowPulse 2.5s ease-in-out infinite;
 }
 @keyframes glowPulse {
     0%, 100% {
-        box-shadow: 0 0 20px rgba(0, 168, 204, 0.3);
-        opacity: 0.7;
+        box-shadow: 0 0 15px 5px rgba(0, 168, 204, 0.4);
+        transform: scale(1);
     }
     50% {
-        box-shadow: 0 0 40px rgba(0, 168, 204, 0.6), 0 0 60px rgba(20, 40, 80, 0.4);
-        opacity: 1;
+        box-shadow: 0 0 30px 15px rgba(0, 168, 204, 0.7);
+        transform: scale(1.03);
     }
 }
 .hero-content {
