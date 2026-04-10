@@ -137,13 +137,13 @@ body {
     mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
-    animation: rotate 20s linear infinite;
+    animation: rotate 40s linear infinite;
 }
 .hero-photo-orbit {
     position: absolute;
     inset: -80px;
     border-radius: 50%;
-    animation: rotateOrbit 10s linear infinite;
+    animation: rotateOrbit 25s linear infinite;
 }
 .hero-photo-orbit span {
     position: absolute;
