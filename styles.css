@@ -3,8 +3,8 @@
 :root {
     --primary: #6366f1;
     --primary-dark: #4f46e5;
-    --secondary: #0ea5e9;
-    --accent: #06b6d4;
+    --secondary: #8b5cf6;
+    --accent: #a855f7;
     --dark: #0f172a;
     --dark-2: #1e293b;
     --dark-3: #334155;
@@ -13,8 +13,8 @@
     --text-light: #64748b;
     --text-lighter: #94a3b8;
     --white: #ffffff;
-    --gradient-1: linear-gradient(135deg, #6366f1 0%, #06b6d4 100%);
-    --gradient-2: linear-gradient(135deg, #0ea5e9 0%, #6366f1 100%);
+    --gradient-1: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+    --gradient-2: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%);
 }
 html { scroll-behavior: smooth; }
 body {
