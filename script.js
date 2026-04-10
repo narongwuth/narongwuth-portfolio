@@ -94,3 +94,14 @@ if (lineQrBtn && lineQrModal) {
         }
     });
 }
+
+// ===== SCROLL PROGRESS BAR =====
+const scrollProgressBar = document.querySelector('.scroll-progress-bar');
+window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollPercent = (scrollTop / docHeight) * 100;
+    if (scrollProgressBar) {
+        scrollProgressBar.style.width = scrollPercent + '%';
+    }
+});
