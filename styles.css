@@ -133,18 +133,36 @@ body {
     border: 3px solid transparent;
     background: linear-gradient(var(--dark), var(--dark)) padding-box,
                 var(--gradient-1) border-box;
-    animation: glowPulse 2.5s ease-in-out infinite;
 }
-@keyframes glowPulse {
-    0%, 100% {
-        box-shadow: 0 0 15px 5px rgba(0, 168, 204, 0.4);
-        transform: scale(1);
-    }
-    50% {
-        box-shadow: 0 0 30px 15px rgba(0, 168, 204, 0.7);
-        transform: scale(1.03);
-    }
+.hero-photo-orbit {
+    position: absolute;
+    inset: -30px;
+    border-radius: 40px;
+    animation: rotate 20s linear infinite;
 }
+.hero-photo-orbit::before,
+.hero-photo-orbit::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: var(--accent);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--accent);
+}
+.hero-photo-orbit::before {
+    top: 50%;
+    left: -5px;
+    transform: translateY(-50%);
+}
+.hero-photo-orbit::after {
+    bottom: 50%;
+    right: -5px;
+    transform: translateY(50%);
+    background: var(--secondary);
+    box-shadow: 0 0 10px var(--secondary);
+}
+@keyframes rotate { to { transform: rotate(360deg); } }
 .hero-content {
     text-align: left;
 }
