@@ -141,9 +141,9 @@ body {
 }
 .hero-photo-orbit {
     position: absolute;
-    inset: -30px;
-    border-radius: 40px;
-    animation: rotateOrbit 12s linear infinite;
+    inset: -80px;
+    border-radius: 50%;
+    animation: rotateOrbit 20s linear infinite;
 }
 .hero-photo-orbit::before {
     content: '';
