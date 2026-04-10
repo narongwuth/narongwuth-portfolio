@@ -110,15 +110,16 @@ body {
 }
 .hero-photo-wrapper {
     position: relative;
-    max-width: 380px;
+    max-width: 420px;
     margin: 0 auto;
     animation: fadeInUp 0.8s ease 0.1s forwards;
     opacity: 0;
 }
 .hero-photo {
     width: 100%;
-    aspect-ratio: 1;
+    aspect-ratio: 3/4;
     object-fit: cover;
+    object-position: center top;
     position: relative;
     z-index: 2;
     border-radius: 24px;
