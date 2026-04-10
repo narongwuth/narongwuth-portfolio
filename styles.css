@@ -1,10 +1,10 @@
 /* ===== CSS RESET & BASE ===== */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 :root {
-    --primary: #6366f1;
-    --primary-dark: #4f46e5;
-    --secondary: #0ea5e9;
-    --accent: #06b6d4;
+    --primary: #142850;
+    --primary-dark: #27496D;
+    --secondary: #0C7B93;
+    --accent: #00A8CC;
     --dark: #0f172a;
     --dark-2: #1e293b;
     --dark-3: #334155;
@@ -13,8 +13,8 @@
     --text-light: #64748b;
     --text-lighter: #94a3b8;
     --white: #ffffff;
-    --gradient-1: linear-gradient(135deg, #6366f1 0%, #06b6d4 100%);
-    --gradient-2: linear-gradient(135deg, #0ea5e9 0%, #6366f1 100%);
+    --gradient-1: linear-gradient(135deg, #142850 0%, #00A8CC 100%);
+    --gradient-2: linear-gradient(135deg, #00A8CC 0%, #142850 100%);
 }
 html { scroll-behavior: smooth; }
 body {
