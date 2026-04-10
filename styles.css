@@ -130,39 +130,39 @@ body {
     position: absolute;
     inset: -15px;
     border-radius: 30px;
-    border: 3px solid transparent;
+    border: 2px solid transparent;
     background: linear-gradient(var(--dark), var(--dark)) padding-box,
                 var(--gradient-1) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    animation: rotate 15s linear infinite;
 }
 .hero-photo-orbit {
     position: absolute;
     inset: -30px;
     border-radius: 40px;
-    animation: rotate 20s linear infinite;
+    animation: rotateOrbit 12s linear infinite;
 }
-.hero-photo-orbit::before,
-.hero-photo-orbit::after {
+.hero-photo-orbit::before {
     content: '';
     position: absolute;
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     background: var(--accent);
     border-radius: 50%;
     box-shadow: 0 0 10px var(--accent);
-}
-.hero-photo-orbit::before {
     top: 50%;
-    left: -5px;
+    left: -4px;
     transform: translateY(-50%);
 }
-.hero-photo-orbit::after {
-    bottom: 50%;
-    right: -5px;
-    transform: translateY(50%);
-    background: var(--secondary);
-    box-shadow: 0 0 10px var(--secondary);
-}
+.orbit-dot-2 { top: 20% !important; left: 90% !important; background: var(--secondary) !important; box-shadow: 0 0 10px var(--secondary) !important; }
+.orbit-dot-3 { top: 80% !important; left: 10% !important; background: var(--primary) !important; box-shadow: 0 0 10px var(--primary) !important; }
+.orbit-dot-4 { top: 10% !important; left: 50% !important; background: var(--accent) !important; box-shadow: 0 0 10px var(--accent) !important; }
+.orbit-dot-5 { bottom: 10% !important; right: 15% !important; top: auto !important; left: auto !important; background: var(--secondary) !important; box-shadow: 0 0 10px var(--secondary) !important; }
 @keyframes rotate { to { transform: rotate(360deg); } }
+@keyframes rotateOrbit { to { transform: rotate(360deg); } }
 .hero-content {
     text-align: left;
 }
