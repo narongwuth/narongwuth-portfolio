@@ -73,22 +73,6 @@ const counterObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.5 });
 document.querySelectorAll('.key-metrics').forEach(el => counterObserver.observe(el));
 
-// ===== TYPEWRITER EFFECT =====
-const typewriter = document.querySelector('.typewriter');
-if (typewriter) {
-    const text = typewriter.textContent;
-    typewriter.textContent = '';
-    let i = 0;
-    const type = () => {
-        if (i < text.length) {
-            typewriter.textContent += text.charAt(i);
-            i++;
-            setTimeout(type, 100);
-        }
-    };
-    setTimeout(type, 1000);
-}
-
 // ===== LINE QR MODAL =====
 const lineQrBtn = document.getElementById('line-qr-btn');
 const lineQrModal = document.getElementById('line-qr-modal');
