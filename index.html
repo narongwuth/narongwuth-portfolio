@@ -6,9 +6,14 @@
     <title>Narongwuth Wudhikanakorn | IT Executive & Digital Transformation Leader</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress">
+        <div class="scroll-progress-bar"></div>
+    </div>
+
     <!-- Animated Background -->
     <div class="bg-animation">
         <div class="bg-orb bg-orb-1"></div>
@@ -35,36 +40,54 @@
 
     <header class="hero">
         <div class="container">
-            <div class="hero-badge">
-                <span class="badge-dot"></span>
-                Available for Opportunities
-            </div>
-            <div class="hero-photo-wrapper">
-                <img src="assets/profile.jpg" alt="Narongwuth Wudhikanakorn" class="hero-photo">
-                <div class="hero-photo-ring"></div>
-            </div>
-            <h1 class="hero-title">
-                <span class="hero-title-line">Narongwuth</span>
-                <span class="hero-title-line accent">Wudhikanakorn</span>
-            </h1>
-            <p class="hero-subtitle">
-                <span class="typewriter">IT Executive & Digital Transformation Leader</span>
-            </p>
-            <p class="hero-tagline">
-                28+ Years Transforming Businesses Through Strategic Technology
-            </p>
-            <div class="hero-cta">
-                <a href="#contact" class="btn btn-primary">
-                    <span>Let's Talk</span>
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </a>
-                <a href="#experience" class="btn btn-secondary">
-                    <span>View Experience</span>
-                </a>
-            </div>
-            <div class="hero-scroll">
-                <span>Scroll to explore</span>
-                <div class="scroll-indicator"></div>
+            <div class="hero-split">
+                <div class="hero-photo-wrapper">
+                    <div class="hero-photo-orbit">
+                        <span class="orbit-dot-2"></span>
+                        <span class="orbit-dot-3"></span>
+                        <span class="orbit-dot-4"></span>
+                        <span class="orbit-dot-5"></span>
+                    </div>
+                    <img src="assets/profile.jpg" alt="Narongwuth Wudhikanakorn" class="hero-photo">
+                    <div class="hero-photo-ring"></div>
+                </div>
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        <span class="hero-title-line">Narongwuth</span>
+                        <span class="hero-title-line accent">Wudhikanakorn</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Ex-PwC | Ex-IBM Consultant | 26 Years IT Leadership
+                    </p>
+                    <div class="hero-usps">
+                        <span class="hero-usp">AI</span>
+                        <span class="hero-usp">Cybersecurity</span>
+                        <span class="hero-usp">SAP / ERP</span>
+                        <span class="hero-usp">Cloud</span>
+                        <span class="hero-usp">Digital Transformation</span>
+                        <span class="hero-usp">Big 4 Consulting Legacy</span>
+                    </div>
+                    <p class="hero-tagline">
+                        Overcome Business Challenges with Human-Technology Integration Leadership
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn btn-primary">
+                            <span>Let's Talk</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                        <a href="#experience" class="btn btn-secondary">
+                            <span>View Experience</span>
+                        </a>
+                    </div>
+                    <div class="hero-scroll-indicator">
+                        <span>Explore my journey</span>
+                        <div class="scroll-arrow">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 5v14M5 12l7 7 7-7"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -363,7 +386,12 @@
                 </p>
                 <div class="contact-cards">
                     <a href="mailto:phom@hotmail.com" class="contact-card">
-                        <div class="contact-card-icon">📧</div>
+                        <div class="contact-card-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                                <path d="M22 6L12 13L2 6"/>
+                            </svg>
+                        </div>
                         <div class="contact-card-content">
                             <span class="contact-card-label">Email</span>
                             <span class="contact-card-value">phom@hotmail.com</span>
@@ -371,7 +399,13 @@
                         <div class="contact-card-arrow">→</div>
                     </a>
                     <a href="https://linkedin.com/in/narongwuth" target="_blank" class="contact-card">
-                        <div class="contact-card-icon">💼</div>
+                        <div class="contact-card-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M16 8A6 6 0 0 1 22 14v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 2-4.93"/>
+                                <rect x="2" y="9" width="4" height="12"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </div>
                         <div class="contact-card-content">
                             <span class="contact-card-label">LinkedIn</span>
                             <span class="contact-card-value">/in/narongwuth</span>
@@ -379,13 +413,32 @@
                         <div class="contact-card-arrow">→</div>
                     </a>
                     <a href="tel:+66936515946" class="contact-card">
-                        <div class="contact-card-icon">📱</div>
+                        <div class="contact-card-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                        </div>
                         <div class="contact-card-content">
                             <span class="contact-card-label">Phone</span>
                             <span class="contact-card-value">+66 93 651-5946</span>
                         </div>
                         <div class="contact-card-arrow">→</div>
                     </a>
+                    <button class="contact-card" id="line-qr-btn">
+                        <div class="contact-card-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+                                <path d="M8 12c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4"/>
+                                <circle cx="8" cy="12" r="1.5"/>
+                                <circle cx="16" cy="12" r="1.5"/>
+                            </svg>
+                        </div>
+                        <div class="contact-card-content">
+                            <span class="contact-card-label">LINE</span>
+                            <span class="contact-card-value">Add friend</span>
+                        </div>
+                        <div class="contact-card-arrow">→</div>
+                    </button>
                 </div>
             </div>
         </div>
@@ -401,5 +454,16 @@
     </footer>
 
     <script src="script.js"></script>
+
+    <!-- LINE QR Modal -->
+    <div id="line-qr-modal" class="qr-modal">
+        <div class="qr-modal-content">
+            <button class="qr-modal-close" id="line-qr-close">×</button>
+            <h3>Add me on LINE</h3>
+            <p>Scan the QR code below</p>
+            <img src="assets/line-qr.jpg" alt="LINE QR Code" class="qr-image">
+            <p class="qr-hint">Open LINE app → Tap Add Friends → Tap QR code icon → Scan</p>
+        </div>
+    </div>
 </body>
 </html>

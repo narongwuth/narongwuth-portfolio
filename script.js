@@ -73,18 +73,35 @@ const counterObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.5 });
 document.querySelectorAll('.key-metrics').forEach(el => counterObserver.observe(el));
 
-// ===== TYPEWRITER EFFECT =====
-const typewriter = document.querySelector('.typewriter');
-if (typewriter) {
-    const text = typewriter.textContent;
-    typewriter.textContent = '';
-    let i = 0;
-    const type = () => {
-        if (i < text.length) {
-            typewriter.textContent += text.charAt(i);
-            i++;
-            setTimeout(type, 100);
+// ===== LINE QR MODAL =====
+const lineQrBtn = document.getElementById('line-qr-btn');
+const lineQrModal = document.getElementById('line-qr-modal');
+const lineQrClose = document.getElementById('line-qr-close');
+
+if (lineQrBtn && lineQrModal) {
+    lineQrBtn.addEventListener('click', () => {
+        lineQrModal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    });
+    lineQrClose.addEventListener('click', () => {
+        lineQrModal.classList.remove('active');
+        document.body.style.overflow = '';
+    });
+    lineQrModal.addEventListener('click', (e) => {
+        if (e.target === lineQrModal) {
+            lineQrModal.classList.remove('active');
+            document.body.style.overflow = '';
         }
-    };
-    setTimeout(type, 1000);
+    });
 }
+
+// ===== SCROLL PROGRESS BAR =====
+const scrollProgressBar = document.querySelector('.scroll-progress-bar');
+window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollPercent = (scrollTop / docHeight) * 100;
+    if (scrollProgressBar) {
+        scrollProgressBar.style.width = scrollPercent + '%';
+    }
+});
