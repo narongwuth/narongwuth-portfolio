@@ -338,6 +338,8 @@ body {
 .timeline-header { display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: baseline; margin-bottom: 0.3rem; }
 .timeline-header h3 { font-size: 1.1rem; color: var(--white); font-weight: 700; }
 .timeline-company { font-size: 0.9rem; color: var(--accent); font-weight: 600; }
+.timeline-company a { color: var(--accent); text-decoration: none; transition: color 0.3s; }
+.timeline-company a:hover { color: var(--white); text-decoration: underline; }
 .timeline-location { font-size: 0.8rem; color: var(--text-light); margin-bottom: 0.75rem; }
 .timeline-highlights { padding-left: 1.25rem; }
 .timeline-highlights li { color: var(--text-lighter); margin-bottom: 0.35rem; font-size: 0.9rem; }
