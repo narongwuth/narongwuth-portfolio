@@ -282,6 +282,10 @@ body {
 .about-text .lead { font-size: 1.25rem; color: var(--white); margin-bottom: 1.5rem; line-height: 1.8; }
 .about-text .lead strong { color: var(--accent); }
 .about-text p { color: var(--text-light); font-size: 1.1rem; }
+.achievements-list { list-style: none; padding: 0; margin: 0 auto; max-width: 700px; text-align: left; }
+.achievements-list li { color: var(--text-light); font-size: 1.05rem; padding: 0.6rem 0; padding-left: 1.8rem; position: relative; border-bottom: 1px solid rgba(255,255,255,0.05); }
+.achievements-list li:last-child { border-bottom: none; }
+.achievements-list li::before { content: '■'; position: absolute; left: 0; color: var(--accent); font-size: 0.8rem; }
 .key-metrics { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
 .metric {
     background: rgba(255,255,255,0.05);
