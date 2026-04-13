@@ -328,6 +328,7 @@ body {
 }
 .timeline-item:hover .timeline-content { background: rgba(255,255,255,0.08); border-color: rgba(99,102,241,0.3); transform: translateX(5px); }
 .timeline-header { display: flex; flex-direction: column; gap: 0.25rem; margin-bottom: 0.25rem; }
+.logo-row { display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; }
 .timeline-header h3 { font-size: 1.2rem; color: var(--white); }
 .timeline-company { font-size: 0.95rem; color: var(--accent); display: flex; align-items: center; gap: 0.5rem; }
 .company-logo { width: 70px; height: auto; opacity: 0.9; }
