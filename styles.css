@@ -310,8 +310,8 @@ body {
     .timeline-item:last-child { margin-bottom: 0; }
     .timeline-marker {
         position: absolute;
-        right: -8px;
-        top: 0;
+        right: -9px;
+        top: 28px;
         width: 18px;
         height: 18px;
         background: var(--accent);
@@ -322,14 +322,24 @@ body {
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 0.6rem;
+        font-size: 0.5rem;
         font-weight: 700;
         color: var(--white);
     }
-    .timeline-item:nth-child(even) .timeline-marker { right: auto; left: -8px; }
+    .timeline-item:nth-child(even) .timeline-marker { right: auto; left: -9px; }
     .timeline-item:hover .timeline-marker { transform: scale(1.4); box-shadow: 0 0 20px var(--accent); }
-    .timeline-period { min-width: 100px; font-weight: 700; color: var(--accent); font-size: 0.85rem; margin-bottom: 0.4rem; text-align: right; }
-    .timeline-item:nth-child(even) .timeline-period { text-align: left; }
+    .timeline-period { 
+        position: absolute;
+        top: 4px;
+        min-width: 130px;
+        font-weight: 700; 
+        color: var(--accent); 
+        font-size: 0.75rem; 
+        text-align: right;
+        padding-right: 22px;
+    }
+    .timeline-item:nth-child(odd) .timeline-period { right: calc(50% - 9px); }
+    .timeline-item:nth-child(even) .timeline-period { left: calc(50% - 9px); text-align: left; padding-right: 0; padding-left: 22px; }
     .timeline-content {
         background: linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
         border: 1px solid rgba(255,255,255,0.1);
