@@ -319,14 +319,14 @@ body {
 .timeline-item:hover .timeline-marker { transform: scale(1.3); background: var(--accent); }
 .timeline-period { min-width: 100px; font-weight: 700; color: var(--accent); font-size: 0.9rem; padding-top: 0.25rem; }
 .timeline-content {
-    background: rgba(255,255,255,0.03);
+    background: rgba(240,240,250,0.95);
     border: 1px solid rgba(255,255,255,0.08);
     border-radius: 16px;
     padding: 1.5rem;
     flex: 1;
     transition: all 0.3s;
 }
-.timeline-item:hover .timeline-content { background: rgba(255,255,255,0.08); border-color: rgba(99,102,241,0.3); transform: translateX(5px); }
+.timeline-item:hover .timeline-content { background: rgba(240,240,250,0.95); border-color: rgba(99,102,241,0.3); transform: translateX(5px); }
 .timeline-header { display: flex; flex-direction: column; gap: 0.25rem; margin-bottom: 0.25rem; }
 .logo-row { display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; }
 .timeline-header h3 { font-size: 1.2rem; color: var(--white); }
