@@ -330,7 +330,7 @@ body {
 .timeline-header { display: flex; flex-direction: column; gap: 0.25rem; margin-bottom: 0.25rem; }
 .timeline-header h3 { font-size: 1.2rem; color: var(--white); }
 .timeline-company { font-size: 0.95rem; color: var(--accent); display: flex; align-items: center; gap: 0.5rem; }
-.company-logo { width: 140px; height: auto; opacity: 0.9; }
+.company-logo { width: 70px; height: auto; opacity: 0.9; }
 .timeline-location { font-size: 0.85rem; color: var(--text-light); margin-bottom: 1rem; }
 .timeline-highlights { padding-left: 1.25rem; }
 .timeline-highlights li { color: var(--text-lighter); margin-bottom: 0.5rem; font-size: 0.95rem; }
