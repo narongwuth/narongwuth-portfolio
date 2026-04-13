@@ -105,3 +105,31 @@ window.addEventListener('scroll', () => {
         scrollProgressBar.style.width = scrollPercent + '%';
     }
 });
+
+// ===== TIMELINE ACCORDION (Mobile) =====
+const timelineItems = document.querySelectorAll('.timeline-item');
+const isMobile = () => window.innerWidth <= 768;
+
+if (isMobile()) {
+    timelineItems.forEach(item => {
+        const header = item.querySelector('.timeline-header');
+        if (header) {
+            header.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+                // Close all
+                timelineItems.forEach(i => i.classList.remove('active'));
+                // Open clicked if wasn't active
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        }
+    });
+}
+
+// Handle resize
+window.addEventListener('resize', () => {
+    if (!isMobile()) {
+        timelineItems.forEach(item => item.classList.remove('active'));
+    }
+});

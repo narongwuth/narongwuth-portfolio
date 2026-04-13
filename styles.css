@@ -301,9 +301,10 @@ body {
 .metric-label { display: block; font-size: 0.9rem; color: var(--text-lighter); margin-top: 0.5rem; }
 
 /* ===== TIMELINE ===== */
+/* Desktop: Interactive Roadmap (Alternating Left/Right) */
 .timeline { max-width: 900px; margin: 0 auto; position: relative; padding: 2rem 0; }
 .timeline::before { content: ''; position: absolute; left: 50%; top: 0; bottom: 0; width: 3px; background: linear-gradient(to bottom, var(--primary), var(--accent)); transform: translateX(-50%); }
-.timeline-item { display: flex; justify-content: flex-end; margin-bottom: 1.75rem; position: relative; width: 50%; padding-right: 3rem; box-sizing: border-box; }
+.timeline-item { display: flex; justify-content: flex-end; margin-bottom: 1.75rem; position: relative; width: 50%; padding-right: 3rem; box-sizing: border-box; cursor: pointer; }
 .timeline-item:nth-child(even) { justify-content: flex-start; margin-left: 50%; padding-right: 0; padding-left: 3rem; }
 .timeline-item:last-child { margin-bottom: 0; }
 .timeline-marker {
@@ -343,12 +344,84 @@ body {
 .timeline-location { font-size: 0.8rem; color: var(--text-light); margin-bottom: 0.75rem; }
 .timeline-highlights { padding-left: 1.25rem; }
 .timeline-highlights li { color: var(--text-lighter); margin-bottom: 0.35rem; font-size: 0.9rem; }
+
+/* Desktop Large (≥1024px): Full Roadmap with Popups */
+@media (min-width: 1024px) {
+    .timeline { max-width: 1100px; }
+    .timeline-item:hover .timeline-content { transform: translateY(-5px) scale(1.02); }
+}
+
+/* Mobile/Tablet (<768px): Accordion Style */
 @media (max-width: 768px) {
-    .timeline::before { left: 20px; }
-    .timeline-item { width: 100%; padding-left: 50px; padding-right: 0; justify-content: flex-start !important; margin-left: 0 !important; margin-bottom: 1.5rem; }
-    .timeline-item .timeline-marker { right: auto !important; left: 12px !important; }
-    .timeline-item .timeline-content::before { left: -10px !important; right: auto !important; border-width: 10px 10px 10px 0 !important; border-color: transparent rgba(255,255,255,0.08) transparent transparent !important; }
-    .timeline-item .timeline-period { text-align: left !important; }
+    .timeline { padding: 1rem 0; }
+    .timeline::before { display: none; }
+    .timeline-item { 
+        width: 100%; 
+        padding: 0; 
+        margin-bottom: 1rem; 
+        flex-direction: column;
+        justify-content: flex-start !important;
+        margin-left: 0 !important;
+    }
+    .timeline-item .timeline-marker { display: none; }
+    .timeline-item .timeline-content { 
+        width: 100%; 
+        padding: 0;
+        background: transparent;
+        border: none;
+        padding: 0;
+    }
+    .timeline-item .timeline-content::before { display: none; }
+    .timeline-header { 
+        background: linear-gradient(135deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
+        border: 1px solid rgba(255,255,255,0.1);
+        border-radius: 12px;
+        padding: 1rem 1.25rem;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0;
+    }
+    .timeline-header:hover { 
+        background: linear-gradient(135deg, rgba(255,255,255,0.12), rgba(255,255,255,0.05));
+        border-color: var(--accent);
+    }
+    .timeline-header::after {
+        content: '+';
+        font-size: 1.5rem;
+        color: var(--accent);
+        transition: transform 0.3s;
+    }
+    .timeline-item.active .timeline-header::after {
+        transform: rotate(45deg);
+    }
+    .timeline-item .timeline-period { 
+        text-align: left !important; 
+        margin-bottom: 0;
+        font-size: 0.75rem;
+        color: var(--text-lighter);
+        min-width: auto;
+        order: 2;
+    }
+    .timeline-header h3 { font-size: 1rem; order: 1; }
+    .timeline-company { order: 0; display: none; }
+    .timeline-details {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+        background: rgba(255,255,255,0.03);
+        border: 1px solid rgba(255,255,255,0.08);
+        border-top: none;
+        border-radius: 0 0 12px 12px;
+        padding: 0 1rem;
+    }
+    .timeline-item.active .timeline-details {
+        max-height: 300px;
+        padding: 1rem 1.25rem;
+    }
+    .timeline-details .timeline-location { margin-bottom: 0.5rem; }
+    .timeline-details .timeline-highlights { padding-left: 1rem; }
 }
 
 /* ===== CERTIFICATES ===== */
