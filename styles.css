@@ -331,6 +331,7 @@ body {
 .logo-row { display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; }
 .timeline-header h3 { font-size: 1.2rem; color: var(--white); }
 .timeline-company { font-size: 0.95rem; color: var(--accent); display: flex; align-items: center; gap: 0.5rem; }
+.logo-link { text-decoration: none; border: none; }
 .company-logo { width: 70px; height: auto; opacity: 0.9; }
 .cr3-logo { width: 70px; }
 .sharp-logo { width: 140px; }
