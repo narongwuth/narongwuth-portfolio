@@ -105,3 +105,14 @@ window.addEventListener('scroll', () => {
         scrollProgressBar.style.width = scrollPercent + '%';
     }
 });
+
+// Mobile number obfuscation - reveal on click
+document.querySelectorAll('.obfuscated').forEach(el => {
+    el.addEventListener('click', function() {
+        const number = this.getAttribute('data-number');
+        if (number) {
+            this.textContent = number;
+            this.removeAttribute('data-number');
+        }
+    });
+});

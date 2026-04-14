@@ -458,6 +458,10 @@ body {
 .contact-card-arrow { font-size: 1.5rem; color: var(--white); transition: transform 0.3s; }
 .contact-card:hover .contact-card-arrow { transform: translateX(5px); }
 
+/* Mobile obfuscation */
+.obfuscated { cursor: pointer; color: var(--accent); font-weight: 500; }
+.obfuscated:hover { text-decoration: underline; }
+
 /* ===== FOOTER ===== */
 .footer { background: var(--dark); padding: 2rem 0; border-top: 1px solid rgba(255,255,255,0.1); }
 .footer-content { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
