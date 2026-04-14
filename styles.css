@@ -379,10 +379,13 @@ body {
 .contact-card.icon-only:hover {
     color: var(--accent) !important;
 }
-.contact-card.icon-only svg {
+.contact-card.icon-only svg,
+.contact-card.icon-only img {
     color: currentColor !important;
     fill: none;
     stroke: currentColor !important;
+    width: 48px;
+    height: 48px;
 }
     flex-direction: row;
     justify-content: center;
@@ -497,10 +500,13 @@ body {
 .contact-card.icon-only:hover {
     color: var(--accent) !important;
 }
-.contact-card.icon-only svg {
+.contact-card.icon-only svg,
+.contact-card.icon-only img {
     color: currentColor !important;
     fill: none;
     stroke: currentColor !important;
+    width: 48px;
+    height: 48px;
 }
     flex-direction: row;
     justify-content: center;
