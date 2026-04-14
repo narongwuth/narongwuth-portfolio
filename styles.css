@@ -371,21 +371,31 @@ body {
 .contact-content { max-width: 700px; margin: 0 auto; text-align: center; }
 .contact-intro { font-size: 1.2rem; color: rgba(255,255,255,0.9); margin-bottom: 3rem; }
 .contact-cards { display: flex; flex-direction: column; gap: 1rem; }
-/* Contact cards - icons only */
-/* Prevent link color from overriding icon color */
-.contact-card.icon-only {
-    color: inherit !important;
+/* Contact icons row - simple horizontal */
+.contact-icons-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    padding: 1rem 0;
 }
-.contact-card.icon-only:hover {
-    color: var(--accent) !important;
+.contact-icons-row a {
+    display: inline-block;
+    opacity: 0.85;
+    transition: all 0.3s;
 }
-.contact-card.icon-only svg,
-.contact-card.icon-only img {
-    color: currentColor !important;
-    fill: none;
-    stroke: currentColor !important;
+/* Compact contact section */
+.section-gradient.contact-section {
+    padding: 2rem 0 !important;
+}
+.contact-icons-row a:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+.contact-icons-row img {
     width: 48px;
     height: 48px;
+    display: block;
 }
     flex-direction: row;
     justify-content: center;
@@ -492,21 +502,31 @@ body {
 }
 
 /* Contact card button reset */
-/* Contact cards - icons only */
-/* Prevent link color from overriding icon color */
-.contact-card.icon-only {
-    color: inherit !important;
+/* Contact icons row - simple horizontal */
+.contact-icons-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    padding: 1rem 0;
 }
-.contact-card.icon-only:hover {
-    color: var(--accent) !important;
+.contact-icons-row a {
+    display: inline-block;
+    opacity: 0.85;
+    transition: all 0.3s;
 }
-.contact-card.icon-only svg,
-.contact-card.icon-only img {
-    color: currentColor !important;
-    fill: none;
-    stroke: currentColor !important;
+/* Compact contact section */
+.section-gradient.contact-section {
+    padding: 2rem 0 !important;
+}
+.contact-icons-row a:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+.contact-icons-row img {
     width: 48px;
     height: 48px;
+    display: block;
 }
     flex-direction: row;
     justify-content: center;
