@@ -376,8 +376,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2.5rem;
-    padding: 1rem 0;
+    gap: 1.5rem;
+    padding: 0.5rem 0;
 }
 .contact-icons-row a {
     display: inline-block;
@@ -389,6 +389,15 @@ body {
     padding: 2rem 0 !important;
 }
 .contact-icons-row a:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+.contact-icons-row span.phone-icon {
+    cursor: default;
+    opacity: 0.85;
+    transition: all 0.3s;
+}
+.contact-icons-row span.phone-icon:hover {
     opacity: 1;
     transform: scale(1.1);
 }
@@ -507,8 +516,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2.5rem;
-    padding: 1rem 0;
+    gap: 1.5rem;
+    padding: 0.5rem 0;
 }
 .contact-icons-row a {
     display: inline-block;
@@ -520,6 +529,15 @@ body {
     padding: 2rem 0 !important;
 }
 .contact-icons-row a:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+.contact-icons-row span.phone-icon {
+    cursor: default;
+    opacity: 0.85;
+    transition: all 0.3s;
+}
+.contact-icons-row span.phone-icon:hover {
     opacity: 1;
     transform: scale(1.1);
 }
