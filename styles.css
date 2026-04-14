@@ -372,7 +372,18 @@ body {
 .contact-intro { font-size: 1.2rem; color: rgba(255,255,255,0.9); margin-bottom: 3rem; }
 .contact-cards { display: flex; flex-direction: column; gap: 1rem; }
 /* Contact cards - icons only */
-.contact-cards.icons-only {
+/* Prevent link color from overriding icon color */
+.contact-card.icon-only {
+    color: inherit !important;
+}
+.contact-card.icon-only:hover {
+    color: var(--accent) !important;
+}
+.contact-card.icon-only svg {
+    color: currentColor !important;
+    fill: none;
+    stroke: currentColor !important;
+}
     flex-direction: row;
     justify-content: center;
     gap: 2rem;
@@ -479,7 +490,18 @@ body {
 
 /* Contact card button reset */
 /* Contact cards - icons only */
-.contact-cards.icons-only {
+/* Prevent link color from overriding icon color */
+.contact-card.icon-only {
+    color: inherit !important;
+}
+.contact-card.icon-only:hover {
+    color: var(--accent) !important;
+}
+.contact-card.icon-only svg {
+    color: currentColor !important;
+    fill: none;
+    stroke: currentColor !important;
+}
     flex-direction: row;
     justify-content: center;
     gap: 2rem;
