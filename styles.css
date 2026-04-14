@@ -386,7 +386,7 @@ body {
 }
 /* Compact contact section */
 .section-gradient.contact-section {
-    padding: 2rem 0 !important;
+    padding: 1rem 0 !important;
 }
 .contact-icons-row a:hover {
     opacity: 1;
@@ -526,7 +526,7 @@ body {
 }
 /* Compact contact section */
 .section-gradient.contact-section {
-    padding: 2rem 0 !important;
+    padding: 1rem 0 !important;
 }
 .contact-icons-row a:hover {
     opacity: 1;
@@ -611,4 +611,16 @@ body {
     .timeline-marker { left: -4px; }
     .timeline-period { min-width: auto; }
     .section { padding: 4rem 0; }
+}
+
+
+/* Prevent browser auto-detection of phone numbers */
+.contact-icons-row a[href^="tel"],
+.phone-icon {
+    pointer-events: none;
+    cursor: default;
+}
+.contact-icons-row a[href^="tel"]:hover {
+    transform: none;
+    opacity: 1;
 }
