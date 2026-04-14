@@ -461,7 +461,7 @@ body {
 .footer { background: var(--dark); padding: 2rem 0; border-top: 1px solid rgba(255,255,255,0.1); }
 .footer-content { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
 .footer-logo { font-size: 1.25rem; font-weight: 800; background: var(--gradient-1); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-.vibe-coded { display: block; margin: 0 auto; max-width: 600px; height: auto; }
+.vibe-coded { display: block; margin: 0 auto; max-width: 300px; height: auto; }
 .footer-text { color: var(--text-lighter); font-size: 0.9rem; }
 
 /* ===== SCROLL ANIMATIONS ===== */
