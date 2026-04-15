@@ -284,6 +284,11 @@ body {
     gap: 0.5rem;
     overflow: hidden;
     padding: 1rem 0;
+    z-index: 1;
+}
+#certificates {
+    position: relative;
+    z-index: 1;
 }
 .carousel-track {
     display: flex;
