@@ -342,6 +342,23 @@ body {
 .cybertron-logo { width: 70px; }
 .indorama-logo { width: 140px; }
 .ibm-logo { width: 112px; }
+/* Job tags */
+.job-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 0.5rem;
+}
+.job-tag {
+    background: linear-gradient(135deg, #FF6B35, #FF8C42);
+    color: white;
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    font-size: 0.7rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
 .timeline-location { font-size: 0.85rem; color: var(--text-lighter); margin-bottom: 1rem; }
 .timeline-highlights { padding-left: 1.25rem; }
 .timeline-highlights li { color: var(--text-lighter); margin-bottom: 0.5rem; font-size: 0.95rem; }
