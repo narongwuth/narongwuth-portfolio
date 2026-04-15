@@ -275,7 +275,10 @@ body {
 
 /* ===== SECTIONS ===== */
 .section { padding: 6rem 0; }
-.section-dark { background: var(--dark-2); }
+.section-dark {
+    position: relative;
+    z-index: 1;
+    isolation: isolate; background: var(--dark-2); }
 /* Certificates Carousel */
 .carousel-container {
     position: relative;
