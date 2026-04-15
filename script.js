@@ -125,3 +125,31 @@ document.querySelectorAll('.footer-logo').forEach(el => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 });
+
+// Carousel functionality
+document.querySelectorAll('.carousel-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const carouselId = btn.dataset.carousel;
+        const track = document.querySelector(`.carousel-track[data-carousel="${carouselId}"]`);
+        const slideWidth = 290;
+        const direction = btn.classList.contains('carousel-prev') ? -1 : 1;
+        track.scrollBy({ left: slideWidth * direction, behavior: 'smooth' });
+    });
+});
+
+// Touch swipe for carousels
+document.querySelectorAll('.carousel-track').forEach(track => {
+    let startX = 0;
+    let scrollLeft = 0;
+    
+    track.addEventListener('touchstart', (e) => {
+        startX = e.touches[0].pageX;
+        scrollLeft = track.scrollLeft;
+    });
+    
+    track.addEventListener('touchmove', (e) => {
+        const x = e.touches[0].pageX;
+        const walk = (startX - x) * 1.5;
+        track.scrollLeft = scrollLeft + walk;
+    });
+});
