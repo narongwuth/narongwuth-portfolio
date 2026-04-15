@@ -601,6 +601,14 @@ body {
 
 /* ===== FOOTER ===== */
 .footer { background: var(--dark); padding: 2rem 0; border-top: 1px solid rgba(255,255,255,0.1); }
+/* Logo image in footer */
+.footer-logo img.logo-img,
+a.footer-logo img.logo-img {
+    height: 40px;
+    width: auto;
+    vertical-align: middle;
+}
+
 .footer-content { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
 .footer-logo, a.footer-logo { font-size: 1.25rem; font-weight: 800; background: var(--gradient-1); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-decoration: none; }
 /* Vibe credits */
