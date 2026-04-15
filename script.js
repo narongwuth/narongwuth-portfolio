@@ -116,3 +116,12 @@ document.querySelectorAll('.obfuscated').forEach(el => {
         }
     });
 });
+
+
+// Footer logo scroll to top
+document.querySelectorAll('.footer-logo').forEach(el => {
+    el.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+});
