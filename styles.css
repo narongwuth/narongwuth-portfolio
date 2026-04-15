@@ -33,6 +33,12 @@
     --gradient-1: linear-gradient(135deg, #142850 0%, #00A8CC 100%);
     --gradient-2: linear-gradient(135deg, #00A8CC 0%, #142850 100%);
 }
+/* Header logo image */
+.logo-img {
+    height: 40px;
+    width: auto;
+}
+
 html { scroll-behavior: smooth; }
 body {
     font-family: 'Outfit', system-ui, -apple-system, sans-serif;
