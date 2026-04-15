@@ -339,8 +339,9 @@ body {
     background: #f5f5f5;
 }
 .carousel-slide:hover {
-    transform: scale(1.02);
-    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+    transform: scale(1.4);
+    z-index: 9999;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
 }
 .carousel-slide img {
     width: 100%;
@@ -362,7 +363,7 @@ body {
     z-index: 2;
 }
 .carousel-btn:hover {
-    transform: scale(1.1);
+    transform: scale(1.4);
 }
 
 /* Certificate Lightbox Modal */
@@ -554,7 +555,7 @@ body {
 }
 .contact-icons-row a:hover {
     opacity: 1;
-    transform: scale(1.1);
+    transform: scale(1.4);
 }
 .contact-icons-row span.phone-icon {
     cursor: default;
@@ -563,7 +564,7 @@ body {
 }
 .contact-icons-row span.phone-icon:hover {
     opacity: 1;
-    transform: scale(1.1);
+    transform: scale(1.4);
 }
 .contact-icons-row img {
     width: 40px;
@@ -694,7 +695,7 @@ body {
 }
 .contact-icons-row a:hover {
     opacity: 1;
-    transform: scale(1.1);
+    transform: scale(1.4);
 }
 .contact-icons-row span.phone-icon {
     cursor: default;
@@ -703,7 +704,7 @@ body {
 }
 .contact-icons-row span.phone-icon:hover {
     opacity: 1;
-    transform: scale(1.1);
+    transform: scale(1.4);
 }
 .contact-icons-row img {
     width: 40px;
