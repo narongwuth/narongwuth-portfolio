@@ -350,7 +350,7 @@ body {
     margin-top: 0.5rem;
 }
 .job-tag {
-    background: #4B248F;
+    background: linear-gradient(135deg, #B8860B, #DAA520, #CD853F);
     color: white;
     padding: 0.2rem 0.6rem;
     border-radius: 12px;
