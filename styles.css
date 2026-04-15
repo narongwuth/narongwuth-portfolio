@@ -291,8 +291,8 @@ body {
 }
 #certificates {
     position: relative;
-    z-index: 9998;
-    isolation: isolate;
+    z-index: 10000;
+    transform: translateZ(0);
 }
 .carousel-container {
     position: relative;
@@ -304,7 +304,8 @@ body {
     overflow: visible;
     padding: 1rem 0;
     background: transparent;
-    z-index: 9999;
+    z-index: 10001;
+    transform: translateZ(0);
 }
 .carousel-track {
     display: flex;
