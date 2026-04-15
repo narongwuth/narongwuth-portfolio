@@ -141,3 +141,30 @@ document.querySelectorAll('.carousel-track').forEach(track => {
         track.scrollLeft = scrollLeft + walk;
     });
 });
+
+
+// Certificate Lightbox Modal
+const modal = document.getElementById('cert-modal');
+const modalImg = document.getElementById('cert-modal-img');
+const modalCaption = document.getElementById('cert-modal-caption');
+
+document.querySelectorAll('.carousel-slide').forEach(slide => {
+    const img = slide.querySelector('img');
+    if (img) {
+        slide.addEventListener('click', () => {
+            modal.style.display = 'block';
+            modalImg.src = img.src;
+            modalCaption.textContent = img.alt;
+        });
+    }
+});
+
+document.querySelector('.cert-modal-close').addEventListener('click', () => {
+    modal.style.display = 'none';
+});
+
+modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+        modal.style.display = 'none';
+    }
+});
