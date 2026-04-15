@@ -292,6 +292,7 @@ body {
 #certificates {
     position: relative;
     z-index: 9998;
+    isolation: isolate;
 }
 .carousel-container {
     position: relative;
@@ -300,9 +301,10 @@ body {
 /* Certificates Carousel - Infinite Scroll */
 .carousel-wrapper {
     position: relative;
-    overflow: hidden;
+    overflow: visible;
     padding: 1rem 0;
     background: transparent;
+    z-index: 9999;
 }
 .carousel-track {
     display: flex;
