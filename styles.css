@@ -339,9 +339,9 @@ body {
     background: #f5f5f5;
 }
 .carousel-slide:hover {
-    transform: scale(1.4);
-    z-index: 9999;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+    transform: scale(1.5);
+    z-index: 99999;
+    box-shadow: 0 25px 70px rgba(0,0,0,0.6);
 }
 .carousel-slide img {
     width: 100%;
