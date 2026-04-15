@@ -324,7 +324,7 @@ body {
     animation: scroll-left 40s linear infinite;
 }
 .carousel-slow {
-    animation: scroll-left 64s linear infinite;
+    animation: scroll-left 80s linear infinite;
 }
 .carousel-track:hover {
     animation-play-state: paused;
