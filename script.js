@@ -142,3 +142,31 @@ document.querySelectorAll('.carousel-track').forEach(track => {
     });
 });
 
+
+
+// Certificate Modal
+const certModal = document.getElementById('certModal');
+const certModalImg = document.getElementById('certModalImg');
+const certModalClose = document.querySelector('.cert-modal-close');
+
+// Click on carousel slide to show modal
+document.querySelectorAll('.carousel-slide').forEach(slide => {
+    slide.addEventListener('click', () => {
+        const img = slide.querySelector('img');
+        if (img) {
+            certModal.style.display = 'block';
+            certModalImg.src = img.src;
+        }
+    });
+});
+
+// Close modal
+certModalClose.addEventListener('click', () => {
+    certModal.style.display = 'none';
+});
+
+certModal.addEventListener('click', (e) => {
+    if (e.target === certModal) {
+        certModal.style.display = 'none';
+    }
+});
