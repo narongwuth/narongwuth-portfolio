@@ -288,7 +288,11 @@ body {
 }
 #certificates {
     position: relative;
-    z-index: 1;
+    z-index: 10;
+}
+.carousel-container {
+    position: relative;
+    z-index: 11;
 }
 .carousel-track {
     display: flex;

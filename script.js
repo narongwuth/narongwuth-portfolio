@@ -124,48 +124,8 @@ document.querySelectorAll('.footer-logo').forEach(el => {
         e.preventDefault();
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
-});
-// Carousel functionality
-document.querySelectorAll('.carousel-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-        const carouselId = btn.dataset.carousel;
-        const track = document.querySelector(`.carousel-track[data-carousel="${carouselId}"]`);
-        const slideWidth = 290;
-        const direction = btn.classList.contains('carousel-prev') ? -1 : 1;
-        track.scrollBy({ left: slideWidth * direction, behavior: 'smooth' });
-    });
-});
-
-// Auto-rotate carousels
-let autoRotateInterval;
-document.querySelectorAll('.carousel-track').forEach(track => {
-    const carouselId = track.dataset.carousel;
-    let scrollPos = 0;
-    
-    autoRotateInterval = setInterval(() => {
-        const slides = track.querySelectorAll('.carousel-slide');
-        scrollPos += 290;
-        if (scrollPos >= track.scrollWidth) {
-            scrollPos = 0;
-        }
-        track.scrollTo({ left: scrollPos, behavior: 'smooth' });
-    }, 4000);
-    
-    // Pause on hover
-    track.addEventListener('mouseenter', () => clearInterval(autoRotateInterval));
-    track.addEventListener('mouseleave', () => {
-        autoRotateInterval = setInterval(() => {
-            const slides = track.querySelectorAll('.carousel-slide');
-            scrollPos += 290;
-            if (scrollPos >= track.scrollWidth) {
-                scrollPos = 0;
-            }
-            track.scrollTo({ left: scrollPos, behavior: 'smooth' });
-        }, 4000);
-    });
-});
-
-// Touch swipe for carousels
+});// Carousel now uses CSS animation for infinite smooth scroll
+// Touch swipe still works via native scroll
 document.querySelectorAll('.carousel-track').forEach(track => {
     let startX = 0;
     let scrollLeft = 0;
