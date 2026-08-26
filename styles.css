@@ -440,6 +440,7 @@ body {
 .timeline-company { font-size: 0.95rem; color: var(--accent); display: flex; align-items: center; gap: 0.5rem; }
 .logo-link { text-decoration: none; border: none; }
 .company-logo { width: 70px; height: auto; opacity: 0.9; }
+.applicad-logo { width: 84px; }
 .cr3-logo { width: 70px; }
 .sharp-logo { width: 140px; }
 .holcim-logo { width: 140px; }
