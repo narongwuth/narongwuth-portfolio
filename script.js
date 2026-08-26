@@ -147,26 +147,41 @@ document.querySelectorAll('.carousel-track').forEach(track => {
 // Certificate Modal
 const certModal = document.getElementById('certModal');
 const certModalImg = document.getElementById('certModalImg');
-const certModalClose = document.querySelector('.cert-modal-close');
+const certModalClose = certModal?.querySelector('.cert-modal-close');
 
-// Click on carousel slide to show modal
-document.querySelectorAll('.carousel-slide').forEach(slide => {
-    slide.addEventListener('click', () => {
-        const img = slide.querySelector('img');
-        if (img) {
-            certModal.style.display = 'block';
-            certModalImg.src = img.src;
+if (certModal && certModalImg && certModalClose) {
+    const closeCertificateModal = () => {
+        certModal.style.display = 'none';
+        certModal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+    };
+
+    // Click on carousel slide to show modal
+    document.querySelectorAll('.carousel-slide').forEach(slide => {
+        slide.addEventListener('click', () => {
+            const img = slide.querySelector('img');
+            if (img) {
+                certModalImg.src = img.src;
+                certModalImg.alt = img.alt || 'Certificate preview';
+                certModal.style.display = 'block';
+                certModal.setAttribute('aria-hidden', 'false');
+                document.body.style.overflow = 'hidden';
+                certModalClose.focus();
+            }
+        });
+    });
+
+    certModalClose.addEventListener('click', closeCertificateModal);
+
+    certModal.addEventListener('click', (e) => {
+        if (e.target === certModal) {
+            closeCertificateModal();
         }
     });
-});
 
-// Close modal
-certModalClose.addEventListener('click', () => {
-    certModal.style.display = 'none';
-});
-
-certModal.addEventListener('click', (e) => {
-    if (e.target === certModal) {
-        certModal.style.display = 'none';
-    }
-});
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && certModal.getAttribute('aria-hidden') === 'false') {
+            closeCertificateModal();
+        }
+    });
+}
